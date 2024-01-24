@@ -1,0 +1,231 @@
+img {
+        content:url("https://lastfm.freetls.fastly.net/i/u/500x500/11e106b61f3a4e448d1fe8578ca36c86.jpg");
+    transform: rotateY(0deg);
+    }
+    
+    img:hover{
+    content:url("https://i.pinimg.com/originals/b1/ca/42/b1ca42cfcb5957e67aa89901c3ee3b6b.gif");
+    transform: rotateY(180deg);
+    }
+    .sound-player{
+    content:url("https://www.youtube.com/embed/POIBZQTIQNg?si=UWmwq55NPGnWXKMy//?&;amp;;autoplay=1&;loop=1&;controls=1");
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+    
+    :root {
+      
+      --interests: block;
+      --links: block;
+      --blurbs: block;
+      --AboutMe: block;
+      --WhoIdLikeToMeet: block;
+      --comments: block;
+      --friends: block;
+      --StardewValleyLogo: block;
+      --JunimoGifs: block;
+    
+      --general: table-row;
+      --music: table-row;
+      --movies: table-row;
+      --television: table-row;
+      --books: table-row;
+      --heroes: table-row;
+    
+      --bodyBackground: url(https://i.ibb.co/5Lv00F6/wp6659180.png);
+      --border1: url(https://i.ibb.co/MkKfRZz/stardew-border.png);
+      --border2: url(https://i.ibb.co/SPRQDDL/stardew-border2.png);
+      --scroll: url(https://i.ibb.co/rdZ1B09/stardew-scroll-1.png);
+      --commentPhoto: url(https://i.ibb.co/ZhjP7Bb/stardew-commentpic.png);
+      --commentBody: url(https://i.ibb.co/g3HZJMZ/stardew-comment.png);
+      --mainlogo: url(https://i.ibb.co/Wtp4yqp/stardewlogo.png);
+      
+      --lightbrown1: #fad793;
+      --brown1: #d67e4c;
+      --blue1: #69baec;
+    }
+    
+    div.col.w-40.left > div:nth-child(6){ display: var(--interests) }
+    div.col.w-40.left > div:nth-child(6) > div.inner > table > tbody > tr:nth-child(1){ display: var(--general); }
+    div.col.w-40.left > div:nth-child(6) > div.inner > table > tbody > tr:nth-child(2){ display: var(--music); }
+    div.col.w-40.left > div:nth-child(6) > div.inner > table > tbody > tr:nth-child(3){ display: var(--movies); }
+    div.col.w-40.left > div:nth-child(6) > div.inner > table > tbody > tr:nth-child(4){ display: var(--television); }
+    div.col.w-40.left > div:nth-child(6) > div.inner > table > tbody > tr:nth-child(5){ display: var(--books); }
+    div.col.w-40.left > div:nth-child(6) > div.inner > table > tbody > tr:nth-child(6){ display: var(--heroes); }
+    div.col.w-40.left > div:nth-child(7) { display: var(--links); }
+    .blurbs { display: var(--blurbs); }
+    .blurbs > div.inner > div:nth-child(1) { display: var(--AboutMe); }
+    .blurbs > div.inner > div:nth-child(2) { display: var(--WhoIdLikeToMeet); }
+    #comments{ display: var(--comments); }
+    .friends { display: var(--friends); }
+    .profile-info { display: var(--StardewValleyLogo); }  
+    
+    .blog-preview::after { 
+      display: var(--JunimoGifs); 
+      background-image: url('https://media.tenor.com/TEDBFZ0I7uYAAAAi/junimo-stardew-valley.gif');
+      background-repeat: no-repeat;
+        background-size: 200px auto;
+        width: 200px; 
+        height: 75px;
+          padding: 0;
+          margin: 0 auto;
+        content:"";
+    }
+    
+    a {
+     color: #FFF; 
+     cursor: var(--cursor-pointer), pointer;  /*Cursor hover*/
+    }
+    
+    .top, footer{
+     background: rgba(0,0,0,0.5) !important; 
+      color: #FFF;
+    }
+    
+    .links{
+      background: var(--blue1) !important;
+    }
+    
+    body{
+     font-family: 'Silkscreen', cursive; 
+      background-image: var(--bodyBackground);
+      background-size: fit;
+        background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    
+    .blurbs, .friends, .contact, .profile-pic, .url-info, .table-section{
+      padding: 25px;
+            border-image: var(--border1) 80 fill repeat !important;
+        border-image-width: 48px !important;
+      
+    }
+    
+    .comments-table{
+      border: none;
+    }
+    
+    .comments-table a{
+     color: #000; 
+    }
+    
+    .comments-table td{
+     background: transparent; 
+    }
+    
+    .comments-table td:nth-child(odd){
+      padding: 25px;
+            border-image: var(--commentPhoto) 80 fill !important;
+        border-image-width: 25px !important;
+    }
+    
+    .comments-table td:nth-child(odd) p{
+      padding: 5px;
+      background-image: var(--scroll);
+      background-size: 100% 100%;
+      text-align: center;
+    }
+    
+    .comments-table td:nth-child(even){
+        padding: 25px;
+            border-image: var(--commentBody) 80 fill !important;
+        border-image-width: 25px !important;
+    }
+    
+    #comments{
+       padding: 25px;
+            border-image: var(--border2) 80 fill repeat !important;
+        border-image-width: 48px !important;
+    }
+    
+    
+    
+    .col.w-40.left h1{
+        background-image: var(--scroll);
+      background-size: 100% 100%;
+      text-align: center;
+      
+    }
+    
+    .contact{
+     font-size: 10px; 
+    border-radius: 25px;
+    }
+    
+    .profile-pic img{
+      padding: 10px;
+      height: 100%;
+    }
+    
+    .heading{
+        background: transparent !important;
+    }
+    
+    .mood p{
+     font-size: 10px; 
+    }
+    
+    main{
+     background: transparent; 
+    }
+    
+    .details-table p{
+     font-size: 10px; 
+    }
+    
+    .details-table td{
+     padding: 0px 5px; 
+    }
+    
+    .details-table td:nth-child(odd){
+     background: transparent;
+      color: black;
+    }
+    
+    .details-table td:nth-child(even){
+     background: rgba(255,255,255,0.5);
+      color: #712f18;
+      font-size: 10px;
+    }
+    
+    .profile-info{
+      height: 200px;
+      background-image: var(--mainlogo);
+      background-size: 100% 100%;
+      text-align: center;
+      color: transparent;
+      border: none;
+    }
+    
+    .friends-grid{
+     display: flex !important;
+      flex-direction: row !important;
+      justify-content: center !important;
+      align-items: top !important;
+      flex-wrap: wrap;
+    }
+    
+    .person{
+      width: 20% !important;
+      margin: 5px;
+      background: transparent;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center !important;
+    }
+    .person img{
+     width: 100%; 
+    }
+    .person p{
+      font-size: 10px !important;
+      text-align: center !important;
+      color: #000 !important;
+    }
+    
+    .table-section a{
+       color: #000 !important;
+    }
+    
+    .person a .pfp-fallback{
+        content: url("https://i.postimg.cc/w3J6pc9h/sonic-mario.gif")
+    }
